@@ -1,0 +1,24 @@
+{
+  "name": "ethbinary",
+  "version": "1.0.0",
+  "description": "Ethbinary token site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WAD27/ethbinary-layout.git"
+  },
+  "author": "WAD Web",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WAD27/ethbinary-layout/issues"
+  },
+  "homepage": "https://github.com/WAD27/ethbinary-layout#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.0.0",
+    "popper.js": "^1.14.0"
+  }
+}
