@@ -15,5 +15,4 @@
 
 <body>
 
-  <main class="grid-container expanded">
-  
+  <main class="">
