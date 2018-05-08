@@ -1,5 +1,35 @@
-
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "colors";
+// variables
+$header-height: 75px;
+// general reset
 body {
-  background-color: #00043B;
+  @extend .bg-one;
 }
-// 
+div, section, ul {
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+  li {
+    text-align: center;
+    a {
+      @extend .color-clear;
+      &.active {
+        @extend .color-hi;
+      }
+    }
+  }
+}
+header {
+  position: fixed;
+  height: $header-height;
+  @extend .bg-base;
+}
+//
+.logo {
+  padding: 16px 0;
+}
+.ha {
+  height: auto;
+}

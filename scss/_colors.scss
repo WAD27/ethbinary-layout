@@ -1,0 +1,27 @@
+//color vars and classes
+$base: #00001C;
+$clear: whitesmoke;
+$one: #00043B;
+$hi: #5DFC9F;
+//
+$color-array: (
+base $base,
+clear $clear,
+one $one,
+hi $hi
+);
+//create classes
+@each $value in $color-array {
+
+  .color-#{nth($value, 1)} {
+    & {
+      color: nth($value, 2);
+    }
+  }
+  .bg-#{nth($value, 1)} {
+    & {
+      background-color: nth($value, 2);
+    }
+  }
+
+}
