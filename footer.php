@@ -1,11 +1,25 @@
 
 </main>
 
-<footer id="footer" class="cell">
-  <div class="grid-container">
+<footer id="footer" class="container-fluid">
 
+  <div class="row">
+
+    <div class="logo col-sm-6 col-md-3">
+      <div class="imgLiquid imgLiquidNoFill">
+        <img src="img/ethbinary-logo-white.png" alt="">
+      </div>
+    </div>
+
+    <div class="row col-sm-6 col-md-9">
+      <h6 class="copyright col-12 align-self-center">
+        <?php echo date('Y') . ' | Ethbinary All Rights Reserved'; ?>
+      </h6>
+    </div>
 
   </div>
+
+</div>
 <!-- </footer> -->
 
 <!--build:js js/main.min.js  -->

@@ -48,4 +48,4 @@
 
 	</header>
 
-	<main class="">
+	<main class="main container">

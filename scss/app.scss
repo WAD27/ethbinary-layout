@@ -1,7 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "colors";
 // variables
-$header-height: 75px;
+$header-height: 70px;
 // general reset
 body {
   @extend .bg-one;
@@ -26,10 +26,22 @@ header {
   height: $header-height;
   @extend .bg-base;
 }
+footer {
+  height: $header-height;
+  @extend .bg-base;
+}
+//
+#heroscreen {
+  height: 100vh;
+}
 //
 .logo {
   padding: 16px 0;
 }
 .ha {
   height: auto;
+}
+.copyright {
+  @extend .color-clear;
+  text-align: center;
 }

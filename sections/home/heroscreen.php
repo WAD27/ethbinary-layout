@@ -1,8 +1,9 @@
-<?php
+<section id="heroscreen" class="container">
 
-for ($i=0; $i < 4; $i++) {
-  echo "Test";
-}
+  <div class="row col-12 align-items-center">
 
 
- ?>
+
+  </div>
+
+</section>
