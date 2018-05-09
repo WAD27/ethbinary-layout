@@ -30,6 +30,14 @@ footer {
   height: $header-height;
   @extend .bg-base;
 }
+button {
+  @extend .bg-hi;
+  @extend .color-clear;
+  border: none;
+  padding: 5px 28px;
+  border-radius: 5px;
+  font-size: 1.7em;
+}
 //
 #heroscreen {
   height: 100vh;
@@ -40,6 +48,16 @@ footer {
 }
 .ha {
   height: auto;
+}
+.hero-title {
+  margin-bottom: 56px;
+  font-size: 3.5em;
+}
+.hero-subtitle {
+  margin-bottom: 56px;
+  span {
+    @extend .color-hi;
+  }
 }
 .copyright {
   @extend .color-clear;

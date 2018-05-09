@@ -6273,7 +6273,7 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-base, header, footer {
   background-color: #00001C; }
 
-.color-clear, ul li a, .copyright {
+.color-clear, ul li a, button, .copyright {
   color: whitesmoke; }
 
 .bg-clear {
@@ -6285,10 +6285,10 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-one, body {
   background-color: #00043B; }
 
-.color-hi, ul li a.active {
+.color-hi, ul li a.active, .hero-subtitle span {
   color: #5DFC9F; }
 
-.bg-hi {
+.bg-hi, button {
   background-color: #5DFC9F; }
 
 div, section, ul {
@@ -6306,6 +6306,12 @@ header {
 footer {
   height: 70px; }
 
+button {
+  border: none;
+  padding: 5px 28px;
+  border-radius: 5px;
+  font-size: 1.7em; }
+
 #heroscreen {
   height: 100vh; }
 
@@ -6314,6 +6320,13 @@ footer {
 
 .ha {
   height: auto; }
+
+.hero-title {
+  margin-bottom: 56px;
+  font-size: 3.5em; }
+
+.hero-subtitle {
+  margin-bottom: 56px; }
 
 .copyright {
   text-align: center; }

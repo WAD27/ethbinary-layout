@@ -31,7 +31,7 @@
 			$active = 0;//meanwhile to test active class
 			?>
 			<nav class="navbar col-sm-6 col-md-9">
-				<ul class="row col-12">
+				<ul class="row col-12 md-visible">
 					<?php for ($i=0; $i < 6 ; $i++):?>
 
 						<li class="col-md-2 align-self-center">
