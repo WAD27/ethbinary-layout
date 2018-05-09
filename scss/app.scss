@@ -14,6 +14,10 @@ ul {
   li {
     text-align: center;
     a {
+      &:hover {
+        text-decoration: none;
+        @extend .color-hi;
+      }
       @extend .color-clear;
       &.active {
         @extend .color-hi;
@@ -25,12 +29,17 @@ header {
   position: fixed;
   height: $header-height;
   @extend .bg-base;
+  z-index: 2;
 }
 footer {
   height: $header-height;
   @extend .bg-base;
 }
-button {
+p {
+  @extend .color-clear;
+  font-size: 1.175em;
+}
+button, a.button {
   @extend .bg-hi;
   @extend .color-clear;
   border: none;
@@ -38,9 +47,22 @@ button {
   border-radius: 5px;
   font-size: 1.7em;
 }
+a.button:hover {
+  text-decoration: none;
+  @extend .color-one;
+}
 //
 #heroscreen {
   height: 100vh;
+  padding-top:$header_height ;
+}
+#about {
+  padding-top:$header_height ;
+  padding-bottom:$header_height ;
+}
+#team {
+  padding-top:$header_height ;
+  padding-bottom:$header_height ;
 }
 //
 .logo {
@@ -48,6 +70,10 @@ button {
 }
 .ha {
   height: auto;
+}
+.title {
+  font-size: 2.5em;
+  @extend .color-clear;
 }
 .hero-title {
   margin-bottom: 56px;

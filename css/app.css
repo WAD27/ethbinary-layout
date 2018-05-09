@@ -6273,22 +6273,22 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-base, header, footer {
   background-color: #00001C; }
 
-.color-clear, ul li a, button, .copyright {
+.color-clear, ul li a, p, button, a.button, .title, .copyright {
   color: whitesmoke; }
 
 .bg-clear {
   background-color: whitesmoke; }
 
-.color-one {
+.color-one, a.button:hover {
   color: #00043B; }
 
 .bg-one, body {
   background-color: #00043B; }
 
-.color-hi, ul li a.active, .hero-subtitle span {
+.color-hi, ul li a:hover, ul li a.active, .hero-subtitle span {
   color: #5DFC9F; }
 
-.bg-hi, button {
+.bg-hi, button, a.button {
   background-color: #5DFC9F; }
 
 div, section, ul {
@@ -6298,28 +6298,49 @@ ul {
   list-style-type: none; }
   ul li {
     text-align: center; }
+    ul li a:hover {
+      text-decoration: none; }
 
 header {
   position: fixed;
-  height: 70px; }
+  height: 70px;
+  z-index: 2; }
 
 footer {
   height: 70px; }
 
-button {
+p {
+  font-size: 1.175em; }
+
+button, a.button {
   border: none;
   padding: 5px 28px;
   border-radius: 5px;
   font-size: 1.7em; }
 
+a.button:hover {
+  text-decoration: none; }
+
 #heroscreen {
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 70px; }
+
+#about {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+#team {
+  padding-top: 70px;
+  padding-bottom: 70px; }
 
 .logo {
   padding: 16px 0; }
 
 .ha {
   height: auto; }
+
+.title {
+  font-size: 2.5em; }
 
 .hero-title {
   margin-bottom: 56px;
