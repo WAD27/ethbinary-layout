@@ -31,10 +31,21 @@ header {
   height: $header-height;
   @extend .bg-base;
   z-index: 2;
+  .logo {
+    padding: 16px 0;
+    // height: $header-height;
+  }
 }
 footer {
-  height: $header-height;
+  min-height: $header-height;
   @extend .bg-base;
+  .row {
+    min-height: $header-height;
+    .logo {
+      padding: 16px 0;
+      height: $header-height;
+    }
+  }
 }
 p {
   @extend .color-clear;
@@ -66,9 +77,6 @@ a.button:hover {
   padding-bottom:$header_height ;
 }
 //
-.logo {
-  padding: 16px 0;
-}
 .ha {
   height: auto;
 }

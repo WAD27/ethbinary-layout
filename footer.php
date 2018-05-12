@@ -5,13 +5,13 @@
 
   <div class="row">
 
-    <div class="logo col-sm-6 col-md-3">
+    <div class="logo col-xs-12 col-md-3">
       <div class="imgLiquid imgLiquidNoFill">
         <img src="img/ethbinary-logo-white.png" alt="">
       </div>
     </div>
 
-    <div class="row col-sm-6 col-md-9">
+    <div class="row col-xs-12 col-md-9">
       <h6 class="copyright col-12 align-self-center">
         <?php echo date('Y') . ' | Ethbinary All Rights Reserved'; ?>
       </h6>

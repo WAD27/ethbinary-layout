@@ -9460,9 +9460,16 @@ header {
   position: fixed;
   height: 70px;
   z-index: 2; }
+  header .logo {
+    padding: 16px 0; }
 
 footer {
-  height: 70px; }
+  min-height: 70px; }
+  footer .row {
+    min-height: 70px; }
+    footer .row .logo {
+      padding: 16px 0;
+      height: 70px; }
 
 p {
   font-size: 1.25em; }
@@ -9487,9 +9494,6 @@ a.button:hover {
 #team {
   padding-top: 70px;
   padding-bottom: 70px; }
-
-.logo {
-  padding: 16px 0; }
 
 .ha {
   height: auto; }
