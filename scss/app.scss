@@ -1,4 +1,5 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "bower_components/fontawesome/web-fonts-with-css/scss/fontawesome.scss";
 @import "colors";
 // variables
 $header-height: 70px;
@@ -83,6 +84,24 @@ a.button:hover {
   margin-bottom: 56px;
   span {
     @extend .color-hi;
+  }
+}
+.team-member {
+  padding: 2em;
+  margin-bottom: 16px;
+  .team-image {
+    height: 180px;
+    @extend .bg-hi;
+    margin-bottom: 16px;
+    border-radius: 120px;
+  }
+  .team-icons {
+    height: 30px;
+    @extend .text-center;
+    margin-bottom: 16px;
+    div.social-icon {
+      display: inline-block;
+    }
   }
 }
 .copyright {

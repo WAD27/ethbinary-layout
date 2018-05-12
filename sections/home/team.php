@@ -2,27 +2,27 @@
 
   <?php
   $title = 'Our Team';
-  $social = array( 'steemmit', 'twitter', 'github', 'linkedin', 'instagram');
+  $social = array( 'steemit', 'twitter', 'github', 'linkedin', 'instagram');
   $team_member = array(
     array(
       'name'=>'Carlos Parra',
       'job'=>'Marketing',
       'social_1'=>$social[0],
-      'social_1_url'=>'http://steemit.com/criptraders',
+      'social_1_url'=>'https://steemit.com/@criptraders',
       'social_2'=>$social[1],
-      'social_2_url'=>'http://twitter.com/crz9403'
+      'social_2_url'=>'https://twitter.com/crz9403'
     ),
     array(
       'name'=>'Cesar Ciau',
       'job'=>'Developer',
       'social_1'=>$social[3],
-      'social_1_url'=>'http://linkedin.com/cesar-arturo-ciau-mendoza-38031885'
+      'social_1_url'=>'https://linkedin.com/cesar-arturo-ciau-mendoza-38031885'
     ),
     array(
       'name'=>'Manuel Cruz',
       'job'=>'Designer',
       'social_1'=>$social[0],
-      'social_1_url'=>'http://steemit.com/manuelcruz',
+      'social_1_url'=>'https://steemit.com/@manuelcruz',
       'social_2'=>$social[4],
       'social_2_url'=>'http://instagram.com/brand.ico'
     ),
@@ -30,7 +30,7 @@
       'name'=>'Carlos Hasbun',
       'job'=>'Developer',
       'social_1'=>$social[0],
-      'social_1_url'=>'http://steemit.com/jazzvoon',
+      'social_1_url'=>'https://steemit.com/@jazzvoon',
       'social_2'=>$social[2],
       'social_2_url'=>'http://github.com/josecaos'
     )
@@ -47,7 +47,7 @@
 
       ?>
 
-      <div class="team-member row col-xs-12 col-md-3">
+      <div class="team-member container col-xs-12 col-sm-6 col-lg-3">
         <!-- image -->
         <div class="team-image col-12 imgLiquid imgLiquidNoFill">
           <img src="" alt="Ethbinary team member">
@@ -57,29 +57,37 @@
           <h4 class="team-data-title text-center"><?php echo $team_member[$i]['name']; ?></h4>
           <p class="team-data-job text-center"><?php echo $team_member[$i]['job']; ?></p>
           <!-- social selection -->
-          <div class="col-12">
+          <div class="team-icons col-12">
 
-          </div>
-          <?php
-          if($team_member[$i]['social_1']):
-            ?>
-            <div class="col-3 imgLiquid imgLiquidNoFill">
-              <img src=" " alt="">
-            </div>
             <?php
-            echo $team_member[$i]['social_1'];
-            echo $team_member[$i]['social_1_url'];
+            if($team_member[$i]['social_1']):
+              ?>
 
-          endif;
+              <div class="social-icon col-3">
+                <a href="<?php echo $team_member[$i]['social_1_url'];?>" target="_blank">
+                  <div class="col imgLiquid imgLiquidNoFill">
+                    <img src="img/<?php echo $team_member[$i]['social_1'];?>.png" alt="">
+                  </div>
+                </a>
+              </div>
 
-          if($team_member[$i]['social_2']):
+              <?php
+            endif;
 
-            echo $team_member[$i]['social_2'];
-            echo $team_member[$i]['social_2_url'];
+            if($team_member[$i]['social_2']):
+              ?>
+              <div class="social-icon col-3">
+                <a href="<?php echo $team_member[$i]['social_2_url'];?>" target="_blank">
+                  <div class="col imgLiquid imgLiquidNoFill">
+                    <img src="img/<?php echo $team_member[$i]['social_2'];?>.png" alt="">
+                  </div>
+                </a>
+              </div>
+              <?php
+            endif;
+            ?>
+          </div>
 
-          endif;
-
-          ?>
         </div>
       </div>
 
