@@ -9,7 +9,7 @@
       'job'=>'Marketing',
       'social_1'=>$social[0],
       'social_1_url'=>'http://steemit.com/criptraders',
-      'social_2'=>$social[0],
+      'social_2'=>$social[1],
       'social_2_url'=>'http://twitter.com/crz9403'
     ),
     array(
@@ -54,19 +54,28 @@
         </div>
         <!-- member data -->
         <div class="team-data col-12 color-clear">
-          <?php var_dump($team_member[0][0]); ?>
-          <h4 class="team-data-title"><?php echo $team_member[$i]['name']; ?></h4>
-          <p class="team-data-job"><?php echo $team_member[$i]['job']; ?></p>
+          <h4 class="team-data-title text-center"><?php echo $team_member[$i]['name']; ?></h4>
+          <p class="team-data-job text-center"><?php echo $team_member[$i]['job']; ?></p>
           <!-- social selection -->
+          <div class="col-12">
+
+          </div>
           <?php
           if($team_member[$i]['social_1']):
-
-            echo "SIIII";
+            ?>
+            <div class="col-3 imgLiquid imgLiquidNoFill">
+              <img src=" " alt="">
+            </div>
+            <?php
+            echo $team_member[$i]['social_1'];
+            echo $team_member[$i]['social_1_url'];
 
           endif;
+
           if($team_member[$i]['social_2']):
 
-            echo "SIIII22222";
+            echo $team_member[$i]['social_2'];
+            echo $team_member[$i]['social_2_url'];
 
           endif;
 
