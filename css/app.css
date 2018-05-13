@@ -9425,7 +9425,7 @@ readers do not read off random characters that represent icons */
 .color-base {
   color: #00001C; }
 
-.bg-base, header, footer {
+.bg-base, header, header .navbar-nav, footer {
   background-color: #00001C; }
 
 .color-clear, ul li a, p, button, a.button, .title, .copyright {
