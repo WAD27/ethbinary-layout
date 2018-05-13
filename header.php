@@ -30,18 +30,27 @@
 			$menu_item_link = array('#', '#', '#', '#', '#', '#');
 			$active = 0;//meanwhile to test active class
 			?>
-			<nav class="navbar col-sm-6 col-md-9">
-				<ul class="row col-12 md-visible">
-					<?php for ($i=0; $i < 6 ; $i++):?>
+			<nav class="navbar navbar-expand-lg col-sm-6 col-md-9">
 
-						<li class="col-md-2 align-self-center">
-							<a class="<?php echo ($i === $active ? 'active':null);?>" href="<?php echo $menu_item_link[$i]?>">
-								<?php echo $menu_item[$i] ?>
-							</a>
-						</li>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-					<?php endfor; ?>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+					<ul class="navbar-nav mr-auto col-12">
+						<?php for ($i=0; $i < 6 ; $i++):?>
+
+							<li class="col-md-2 align-self-center">
+								<a class="<?php echo ($i === $active ? 'active':null);?>" href="<?php echo $menu_item_link[$i]?>">
+									<?php echo $menu_item[$i] ?>
+								</a>
+							</li>
+
+						<?php endfor; ?>
+					</ul>
+				</div>
+
 			</nav>
 
 		</div>
