@@ -27,29 +27,31 @@
 			<?php
 			// $menu_item = array('Trade', 'FAQ', 'About Us', 'Contract', 'Join our ICO', 'Whitepaper');//original order
 			$menu_item = array('About Us','Trade', 'Contract', 'Join our ICO', 'Whitepaper', 'FAQ');
-			$menu_item_link = array('#', '#', '#', '#', '#', '#');
-			$active = 0;//meanwhile to test active class
+			$menu_item_link = array('#about', '#', '#', '#', '#', '#');
+			$active = 0;//active class
 			?>
 			<nav class="navbar navbar-expand-lg col-sm-6 col-md-9">
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<!-- <span class="navbar-toggler-icon"></span> -->
+				<!--  -->
+				<button class="col-12 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="fa fa-bars"></span>
 				</button>
-
+				<!--  -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 					<ul class="navbar-nav mr-auto col-12">
-						<?php for ($i=0; $i < 6 ; $i++):?>
+						<?php for ($i=0; $i < 6; $i++):?>
 
-							<li class="col-md-2 align-self-center">
+							<li class="col-lg-2 align-self-center">
+
 								<a class="<?php echo ($i === $active ? 'active':null);?>" href="<?php echo $menu_item_link[$i]?>">
-									<?php echo $menu_item[$i] ?>
+									<?php echo $menu_item[$i]; ?>
 								</a>
+
 							</li>
 
 						<?php endfor; ?>
 					</ul>
+
 				</div>
 
 			</nav>

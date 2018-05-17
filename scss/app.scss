@@ -44,8 +44,12 @@ header {
   }
   .navbar-nav {
     @extend .bg-base;
+    &li {
+      height: 25px;
+    } 
   }
   .navbar-toggler {
+    text-align: right;
     @extend .color-hi;
     &:hover {
       @extend .color-clear;
