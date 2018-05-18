@@ -44,9 +44,14 @@ header {
   }
   .navbar-nav {
     @extend .bg-base;
-    &li {
-      height: 25px;
-    } 
+    // @if(.navbar-toggler:hidden == true) {
+    //     &li {
+    //       height: 45px;
+    //   }
+    // }
+    // li {
+    //   height: 40px;
+    // }
   }
   .navbar-toggler {
     text-align: right;
@@ -55,6 +60,7 @@ header {
       @extend .color-clear;
     }
   }
+
 }
 footer {
   min-height: $header-height;

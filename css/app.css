@@ -9510,10 +9510,10 @@ header {
   z-index: 2; }
   header .logo {
     padding: 16px 0; }
-  header .navbar-navli {
-    height: 25px; }
   header .navbar-toggler {
     text-align: right; }
+    header .navbar-toggler if(.navbar-toggler:hidden) .navbar-nav li {
+      height: 45px; }
 
 footer {
   min-height: 70px; }

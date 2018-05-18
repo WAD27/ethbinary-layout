@@ -1,0 +1,21 @@
+{
+  "name": "ethbinary",
+  "description": "Ethbinary token site",
+  "main": "index.js",
+  "authors": [
+    "WAD Web"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/WAD27/ethbinary-layout",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "^5.0.13",
+    "imgLiquid": "^0.9.944"
+  }
+}
