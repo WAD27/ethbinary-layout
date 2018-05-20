@@ -6087,7 +6087,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center, .team-member .team-icons {
+.text-center, .team-member .team-icons, .social-icons {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -9576,6 +9576,9 @@ a.button:hover {
   margin-bottom: 56px;
   font-family: 'ralewaybold', Arial, sans-serif !important; }
 
+.social-title {
+  margin-top: 70px; }
+
 .team-member {
   padding: 2em;
   margin-bottom: 16px; }
@@ -9588,6 +9591,13 @@ a.button:hover {
     margin-bottom: 16px; }
     .team-member .team-icons div.social-icon {
       display: inline-block; }
+
+.social-icons {
+  height: 85px;
+  margin-bottom: 16px;
+  margin-top: 35px; }
+  .social-icons div.social-icon {
+    display: inline-block; }
 
 .copyright {
   text-align: center; }

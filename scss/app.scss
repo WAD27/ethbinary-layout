@@ -13,19 +13,19 @@ $font-2-1: "raleway-bold-webfont.woff2";
 $font-2-2: "raleway-bold-webfont.woff";
 // fonts
 @font-face {
-    font-family: 'archiaregular';
-    src: url($fa-font-path + $font-1-1 ) format('woff2'),
-         url($fa-font-path + $font-1-2 ) format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'archiaregular';
+  src: url($fa-font-path + $font-1-1 ) format('woff2'),
+  url($fa-font-path + $font-1-2 ) format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
 @font-face {
-    font-family: 'ralewaybold';
-    src: url($fa-font-path + $font-2-1 ) format('woff2'),
-         url($fa-font-path + $font-2-2 ) format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'ralewaybold';
+  src: url($fa-font-path + $font-2-1 ) format('woff2'),
+  url($fa-font-path + $font-2-2 ) format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
 //
@@ -148,6 +148,9 @@ a.button:hover {
     @extend .color-hi;
   }
 }
+.social-title {
+  margin-top: $header_height;
+}
 .team-member {
   padding: 2em;
   margin-bottom: 16px;
@@ -164,6 +167,15 @@ a.button:hover {
     div.social-icon {
       display: inline-block;
     }
+  }
+}
+.social-icons {
+  height: 85px;
+  @extend .text-center;
+  margin-bottom: 16px;
+  margin-top:$header_height/2;
+  div.social-icon {
+    display: inline-block;
   }
 }
 .copyright {

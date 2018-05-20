@@ -95,18 +95,35 @@
     endfor;
 
     $title_2 = "Our Social Media";
-
+    $social = array(
+      array(
+        'url' => '#',
+        'icon' => 'discord'
+      )
+    );
     ?>
 
-    <h4 class="col-12 text-center"><?php echo $title_2; ?></h4>
+    <h4 class="social-title col-12 text-center"><?php echo $title_2; ?></h4>
     <!--  -->
-    <div class="social-icon col-12">
-      <a href="<?php echo $team_member[$i]['social_1_url'];?>" target="_blank">
-        <div class="col imgLiquid imgLiquidNoFill">
-          <img src="img/<?php echo $team_member[$i]['social_1'];?>.png" alt="">
+    <?php
+
+    ?>
+    <div class="social-icons col-12">
+
+      <?php for ($i=0; $i < count($social) ; $i++):?>
+
+        <div class="social-icon col-3">
+          <a href="<?php echo $social[$i]['url'];?>" target="_blank">
+            <div class="col imgLiquid imgLiquidNoFill">
+              <img src="img/<?php echo $social[$i]['icon'];?>.png" alt="">
+            </div>
+          </a>
         </div>
-      </a>
+
+      <?php endfor; ?>
+
     </div>
+
   </div>
 
 </section>
