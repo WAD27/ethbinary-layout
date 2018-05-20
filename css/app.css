@@ -6275,8 +6275,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../webfonts//fa-brands-400.eot");
+  src: url("../webfonts//fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts//fa-brands-400.woff2") format("woff2"), url("../webfonts//fa-brands-400.woff") format("woff"), url("../webfonts//fa-brands-400.ttf") format("truetype"), url("../webfonts//fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -6289,8 +6289,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../webfonts//fa-regular-400.eot");
+  src: url("../webfonts//fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts//fa-regular-400.woff2") format("woff2"), url("../webfonts//fa-regular-400.woff") format("woff"), url("../webfonts//fa-regular-400.ttf") format("truetype"), url("../webfonts//fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -6304,8 +6304,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../webfonts//fa-solid-900.eot");
+  src: url("../webfonts//fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts//fa-solid-900.woff2") format("woff2"), url("../webfonts//fa-solid-900.woff") format("woff"), url("../webfonts//fa-solid-900.ttf") format("truetype"), url("../webfonts//fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -9473,7 +9473,7 @@ readers do not read off random characters that represent icons */
 .bg-base, header, header .navbar-nav, footer {
   background-color: #00001C; }
 
-.color-clear, body ul li a, body p, header .navbar-toggler:hover, button, a.button, .title, .copyright {
+.color-clear, body h1, body h2, body h3, body h4, body h5, body h6, body ul li a, body p, header .navbar-toggler:hover, button, a.button, .title, .copyright {
   color: whitesmoke; }
 
 .bg-clear {
@@ -9491,17 +9491,37 @@ readers do not read off random characters that represent icons */
 .bg-hi, button, a.button, .team-member .team-image {
   background-color: #5DFC9F; }
 
+@font-face {
+  font-family: 'archiaregular';
+  src: url("../webfonts/archia-regular-webfont.woff2") format("woff2"), url("../webfonts/archia-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url("../webfonts/raleway-bold-webfont.woff2") format("woff2"), url("../webfonts/raleway-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body div, body section, body ul {
-  height: 100%; }
+  height: 100%;
+  font-family: 'archiaregular', Arial, sans-serif; }
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'archiaregular', Arial, sans-serif; }
 
 body ul {
   list-style-type: none; }
   body ul li {
-    text-align: center; }
-    body ul li a:hover {
-      text-decoration: none; }
+    text-align: center;
+    font-family: 'archiaregular', Arial, sans-serif; }
+    body ul li a {
+      font-family: 'archiaregular', Arial, sans-serif; }
+      body ul li a:hover {
+        text-decoration: none; }
 
 body p {
+  font-family: 'archiaregular', Arial, sans-serif;
   font-size: 1.25em; }
 
 header {
@@ -9512,8 +9532,6 @@ header {
     padding: 16px 0; }
   header .navbar-toggler {
     text-align: right; }
-    header .navbar-toggler if(.navbar-toggler:hidden) .navbar-nav li {
-      height: 45px; }
 
 footer {
   min-height: 70px; }
@@ -9555,7 +9573,8 @@ a.button:hover {
   font-size: 3.5em; }
 
 .hero-subtitle {
-  margin-bottom: 56px; }
+  margin-bottom: 56px;
+  font-family: 'ralewaybold', Arial, sans-serif !important; }
 
 .team-member {
   padding: 2em;

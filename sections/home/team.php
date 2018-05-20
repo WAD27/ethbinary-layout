@@ -26,14 +26,14 @@
       'social_2'=>$social[4],
       'social_2_url'=>'http://instagram.com/brand.ico'
     ),
-    array(
-      'name'=>'Carlos Hasbun',
-      'job'=>'Developer',
-      'social_1'=>$social[0],
-      'social_1_url'=>'https://steemit.com/@jazzvoon',
-      'social_2'=>$social[2],
-      'social_2_url'=>'http://github.com/josecaos'
-    )
+    // array(
+    //   'name'=>'Carlos Hasbun',
+    //   'job'=>'Developer',
+    //   'social_1'=>$social[0],
+    //   'social_1_url'=>'https://steemit.com/@jazzvoon',
+    //   'social_2'=>$social[2],
+    //   'social_2_url'=>'http://github.com/josecaos'
+    // )
   );
   ?>
 
@@ -43,11 +43,11 @@
 
     <?php
 
-    for ($i=0; $i < 4; $i++):
+    for ($i=0; $i < count($team_member); $i++):
 
       ?>
 
-      <div class="team-member container col-xs-12 col-sm-6 col-lg-3">
+      <div class="team-member container col-xs-12 col-sm-6 col-lg-4">
         <!-- image -->
         <div class="team-image col-12 imgLiquid imgLiquidNoFill">
           <img src="" alt="Ethbinary team member">
@@ -93,8 +93,20 @@
 
       <?php
     endfor;
+
+    $title_2 = "Our Social Media";
+
     ?>
 
+    <h4 class="col-12 text-center"><?php echo $title_2; ?></h4>
+    <!--  -->
+    <div class="social-icon col-12">
+      <a href="<?php echo $team_member[$i]['social_1_url'];?>" target="_blank">
+        <div class="col imgLiquid imgLiquidNoFill">
+          <img src="img/<?php echo $team_member[$i]['social_1'];?>.png" alt="">
+        </div>
+      </a>
+    </div>
   </div>
 
 </section>

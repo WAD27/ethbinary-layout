@@ -1,4 +1,4 @@
-$fa-font-path: "../webfonts" !default;
+$fa-font-path: "../webfonts/" !default;
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "bower_components/fontawesome/web-fonts-with-css/scss/fa-brands.scss";
 @import "bower_components/fontawesome/web-fonts-with-css/scss/fa-regular.scss";
@@ -7,17 +7,47 @@ $fa-font-path: "../webfonts" !default;
 @import "colors";
 // variables
 $header-height: 70px;
+$font-1-1: "archia-regular-webfont.woff2";
+$font-1-2: "archia-regular-webfont.woff";
+$font-2-1: "raleway-bold-webfont.woff2";
+$font-2-2: "raleway-bold-webfont.woff";
+// fonts
+@font-face {
+    font-family: 'archiaregular';
+    src: url($fa-font-path + $font-1-1 ) format('woff2'),
+         url($fa-font-path + $font-1-2 ) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url($fa-font-path + $font-2-1 ) format('woff2'),
+         url($fa-font-path + $font-2-2 ) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+//
 // general reset
+//
 body {
   @extend .bg-one;
   div, section, ul {
     height: 100%;
+    font-family: 'archiaregular', Arial, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'archiaregular', Arial, sans-serif;
+    @extend .color-clear;
   }
   ul {
     list-style-type: none;
     li {
       text-align: center;
+      font-family: 'archiaregular', Arial, sans-serif;
       a {
+        font-family: 'archiaregular', Arial, sans-serif;
         &:hover {
           text-decoration: none;
           @extend .color-hi;
@@ -31,6 +61,7 @@ body {
   }
   p {
     @extend .color-clear;
+    font-family: 'archiaregular', Arial, sans-serif;
     font-size: 1.25em;
   }
 }
@@ -112,6 +143,7 @@ a.button:hover {
 }
 .hero-subtitle {
   margin-bottom: 56px;
+  font-family: 'ralewaybold', Arial, sans-serif !important;
   span {
     @extend .color-hi;
   }
