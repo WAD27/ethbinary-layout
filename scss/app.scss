@@ -178,6 +178,14 @@ a.button:hover {
     display: inline-block;
   }
 }
+#faq {
+  .faq-question {
+    @extend .color-hi;
+  }
+  .faq-answer {
+     
+  }
+}
 .copyright {
   @extend .color-clear;
   text-align: center;
