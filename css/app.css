@@ -6087,7 +6087,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center, .team-member .team-icons, .social-icons {
+.text-center, .team-member .team-icons, .social-icons, #ico .ico-logo {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -9485,7 +9485,7 @@ readers do not read off random characters that represent icons */
 .bg-one, body {
   background-color: #00043B; }
 
-.color-hi, body ul li a:hover, body ul li a.active, header .navbar-toggler, .hero-subtitle span, #faq .faq-question {
+.color-hi, body ul li a:hover, body ul li a.active, header .navbar-toggler, .hero-subtitle span, #faq .faq-question, #ico .ico-text {
   color: #5DFC9F; }
 
 .bg-hi, button, a.button, .team-member .team-image {
@@ -9604,6 +9604,27 @@ a.button:hover {
   margin-bottom: 70px; }
   #faq .title {
     margin-bottom: 70px; }
+
+#ico .ico-logo {
+  height: 45px;
+  margin-bottom: 16px;
+  margin-top: 70px; }
+  #ico .ico-logo div.ico-logo-img {
+    display: inline-block; }
+
+#ico .ico-text {
+  font-size: 1.4em;
+  margin-top: 70px; }
+
+#ico .goal .goal-text {
+  font-size: 1em;
+  display: inline-block;
+  margin-bottom: 5px; }
+
+#ico .ico-title {
+  margin-top: 35px;
+  font-size: 1em;
+  text-transform: uppercase; }
 
 .copyright {
   text-align: center; }

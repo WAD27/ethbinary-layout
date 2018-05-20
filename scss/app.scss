@@ -191,6 +191,34 @@ a.button:hover {
 
   }
 }
+#ico {
+  .ico-logo {
+    height: 45px;
+    @extend .text-center;
+    margin-bottom: 16px;
+    margin-top:$header_height;
+    div.ico-logo-img {
+      display: inline-block;
+    }
+  }
+  .ico-text {
+    @extend .color-hi;
+    font-size: 1.4em;
+    margin-top:$header_height;
+  }
+  .goal {
+    .goal-text {
+      font-size: 1em;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+  .ico-title {
+    margin-top:$header_height/2;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+}
 .copyright {
   @extend .color-clear;
   text-align: center;
