@@ -179,11 +179,16 @@ a.button:hover {
   }
 }
 #faq {
+  font-size: 0.8em;
+  margin-bottom: $header_height;
+  .title {
+    margin-bottom: $header_height;
+  }
   .faq-question {
     @extend .color-hi;
   }
   .faq-answer {
-     
+
   }
 }
 .copyright {

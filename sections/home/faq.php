@@ -24,7 +24,7 @@
 
   <div class="row col-12">
 
-    <h2 class="title col-12 text-left"><?php echo $title; ?></h2>
+    <h2 class="title col-12 text-center"><?php echo $title; ?></h2>
 
     <?php
 

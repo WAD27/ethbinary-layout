@@ -9599,5 +9599,11 @@ a.button:hover {
   .social-icons div.social-icon {
     display: inline-block; }
 
+#faq {
+  font-size: 0.8em;
+  margin-bottom: 70px; }
+  #faq .title {
+    margin-bottom: 70px; }
+
 .copyright {
   text-align: center; }
