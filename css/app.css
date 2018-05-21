@@ -9485,7 +9485,7 @@ readers do not read off random characters that represent icons */
 .bg-one, body {
   background-color: #00043B; }
 
-.color-hi, body ul li a:hover, body ul li a.active, header .navbar-toggler, .hero-subtitle span, #faq .faq-question, #ico .ico-text {
+.color-hi, body ul li a:hover, body ul li a.active, header .navbar-toggler, .hero-subtitle span, #faq .faq-question, #ico .ico-text, #ico .ico-graph .ico-graph-title, #ico .ico-graph .bonus .bonus-sent {
   color: #5DFC9F; }
 
 .bg-hi, button, a.button, .team-member .team-image {
@@ -9626,5 +9626,26 @@ a.button:hover {
   font-size: 1em;
   text-transform: uppercase; }
 
+#ico .ico-graph {
+  margin-top: 70px; }
+  #ico .ico-graph p.ico-graph-text {
+    margin-bottom: 70px; }
+  #ico .ico-graph .ico-graph-title {
+    font-size: 1.3em;
+    margin-bottom: 35px; }
+  #ico .ico-graph .ico-graphic {
+    height: 380px; }
+  #ico .ico-graph .bonus .bonus-sent {
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 5px; }
+  #ico .ico-graph .bonus .bonus-discount {
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 5px; }
+
 .copyright {
   text-align: center; }
+
+.upper {
+  text-transform: uppercase; }

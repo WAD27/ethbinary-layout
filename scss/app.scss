@@ -218,8 +218,38 @@ a.button:hover {
     font-size: 1em;
     text-transform: uppercase;
   }
+  .ico-graph {
+    margin-top: $header_height;
+    p.ico-graph-text {
+      margin-bottom: $header_height;
+    }
+    .ico-graph-title {
+      @extend .color-hi;
+      font-size: 1.3em;
+      margin-bottom: $header_height/2;
+    }
+    .ico-graphic {
+      height: 380px;
+    }
+    .bonus {
+      .bonus-sent {
+        @extend .color-hi;
+        font-size: 1em;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      .bonus-discount {
+        font-size: 1em;
+        display: inline-block;
+        margin-bottom: 5px;
+      }  
+    }
+  }
 }
 .copyright {
   @extend .color-clear;
   text-align: center;
+}
+.upper {
+  text-transform: uppercase;
 }
