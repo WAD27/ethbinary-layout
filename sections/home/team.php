@@ -49,9 +49,9 @@
 
       <div class="team-member container col-xs-12 col-sm-6 col-lg-4">
         <!-- image -->
-        <div class="team-image col-12 imgLiquid imgLiquidNoFill">
+        <div class="team-image col-12">
           <div class="team-image-rounded imgLiquid imgLiquidNoFill">
-            <img src="" alt="Ethbinary team member">
+            <img src="img/anon-avatar.png" alt="Ethbinary team member">
           </div>
         </div>
         <!-- member data -->
