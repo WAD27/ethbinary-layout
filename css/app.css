@@ -9629,10 +9629,10 @@ a.button:hover {
     #ico .ico-graph p.ico-graph-text {
       margin-bottom: 35px; }
     #ico .ico-graph .ico-graph-title {
-      font-size: 1.3em;
-      margin-bottom: 35px; }
+      font-size: 1.3em; }
     #ico .ico-graph .ico-graphic {
-      height: 380px; }
+      height: 380px;
+      margin-bottom: 70px; }
     #ico .ico-graph .bonus {
       padding-top: 10px; }
       #ico .ico-graph .bonus .bonus-sent {

@@ -227,10 +227,11 @@ a.button:hover {
     .ico-graph-title {
       @extend .color-hi;
       font-size: 1.3em;
-      margin-bottom: $header_height/2;
+      // margin-bottom: $header_height/4;
     }
     .ico-graphic {
       height: 380px;
+      margin-bottom: $header_height;
     }
     .bonus {
       padding-top: 10px;

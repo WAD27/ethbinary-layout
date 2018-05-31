@@ -18,3 +18,48 @@ function img_liquid() {
   })
 
 }
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Distribution', 'Token percent'],
+    ['Reservations', 20],
+    ['Marketing', 25],
+    ['Resources', 15],
+    ['Development', 40]
+  ]);
+
+  var options = {
+    title: '',
+    backgroundColor:{
+      'fill':'transparent',
+      'strokeWidth': 0
+    },
+    chartArea: {
+      height:'80%',
+      width: '80%',
+      backgroundColor: {
+        strokeWidth: 0,
+        stroke: 'transparent'
+      }
+    },
+    fontSize: '1.5em',
+    // legend: {
+    //   position: 'none'
+    // },
+    legend: {
+      position: 'bottom',
+      textStyle: {
+        color: 'white'
+      }
+    },
+    colors: ['#00A36D','#00C49A','#5DFC9F','#78FAB2']
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+  chart.draw(data, options);
+}

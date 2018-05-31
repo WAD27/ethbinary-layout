@@ -79,7 +79,10 @@
         <?php echo $ico_graph_title; ?>
       </h2>
       <div class="ico-graphic">
-        <!--  -->
+        <?php
+        include_once 'sections/charts/ico-distribution-chart.php';
+         ?>
+
       </div>
       <h2 class="ico-graph-title col-12 text-center upper">
         <?php echo $ico_graph_title_2; ?>
