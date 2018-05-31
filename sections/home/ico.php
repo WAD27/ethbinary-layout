@@ -79,7 +79,7 @@
         <?php echo $ico_graph_title; ?>
       </h2>
       <div class="ico-graphic">
-
+        <!--  -->
       </div>
       <h2 class="ico-graph-title col-12 text-center upper">
         <?php echo $ico_graph_title_2; ?>
@@ -92,6 +92,10 @@
           <div class="bonus row col-12">
             <p class="bonus-sent col-6 text-right"><?php echo $bonus[$i]['sent']; ?></p>
             <p class="bonus-discount col-6 text-left"><?php echo $bonus[$i]['discount']; ?></p>
+            <div class="col-12 bonus-separator">
+              <div class="col-4"></div>
+              <div class="bonus-border col-4"></div>
+            </div>
           </div>
 
         <?php endfor; ?>

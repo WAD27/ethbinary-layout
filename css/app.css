@@ -9562,7 +9562,7 @@ a.button:hover {
   padding-top: 70px;
   padding-bottom: 70px; }
 
-.ha {
+.ha, #ico .ico-graph .bonus .bonus-separator, #ico .ico-graph .bonus .bonus-separator div {
   height: auto; }
 
 .title {
@@ -9605,44 +9605,50 @@ a.button:hover {
   #faq .title {
     margin-bottom: 70px; }
 
-#ico .ico-logo {
-  height: 45px;
-  margin-bottom: 16px;
-  margin-top: 70px; }
-  #ico .ico-logo div.ico-logo-img {
-    display: inline-block; }
-
-#ico .ico-text {
-  font-size: 1.4em;
-  margin-top: 70px; }
-
-#ico .goal .goal-text {
-  font-size: 1em;
-  display: inline-block;
-  margin-bottom: 5px; }
-
-#ico .ico-title {
-  margin-top: 35px;
-  font-size: 1em;
-  text-transform: uppercase; }
-
-#ico .ico-graph {
-  margin-top: 70px; }
-  #ico .ico-graph p.ico-graph-text {
-    margin-bottom: 70px; }
-  #ico .ico-graph .ico-graph-title {
-    font-size: 1.3em;
-    margin-bottom: 35px; }
-  #ico .ico-graph .ico-graphic {
-    height: 380px; }
-  #ico .ico-graph .bonus .bonus-sent {
+#ico {
+  padding-bottom: 70px; }
+  #ico .ico-logo {
+    height: 45px;
+    margin-bottom: 16px;
+    margin-top: 70px; }
+    #ico .ico-logo div.ico-logo-img {
+      display: inline-block; }
+  #ico .ico-text {
+    font-size: 1.4em;
+    margin-top: 70px; }
+  #ico .goal .goal-text {
     font-size: 1em;
     display: inline-block;
     margin-bottom: 5px; }
-  #ico .ico-graph .bonus .bonus-discount {
+  #ico .ico-title {
+    margin-top: 35px;
     font-size: 1em;
-    display: inline-block;
-    margin-bottom: 5px; }
+    text-transform: uppercase; }
+  #ico .ico-graph {
+    margin-top: 70px; }
+    #ico .ico-graph p.ico-graph-text {
+      margin-bottom: 35px; }
+    #ico .ico-graph .ico-graph-title {
+      font-size: 1.3em;
+      margin-bottom: 35px; }
+    #ico .ico-graph .ico-graphic {
+      height: 380px; }
+    #ico .ico-graph .bonus {
+      padding-top: 10px; }
+      #ico .ico-graph .bonus .bonus-sent {
+        font-size: 1em;
+        padding-right: 50px;
+        display: inline-block;
+        margin-bottom: 0px; }
+      #ico .ico-graph .bonus .bonus-discount {
+        font-size: 1em;
+        padding-left: 35px;
+        display: inline-block;
+        margin-bottom: 0px; }
+      #ico .ico-graph .bonus .bonus-separator div {
+        display: inline-block; }
+      #ico .ico-graph .bonus .bonus-separator .bonus-border {
+        border: 1px solid whitesmoke; }
 
 .copyright {
   text-align: center; }

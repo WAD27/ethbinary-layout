@@ -192,6 +192,7 @@ a.button:hover {
   }
 }
 #ico {
+  padding-bottom: $header_height;
   .ico-logo {
     height: 45px;
     @extend .text-center;
@@ -221,7 +222,7 @@ a.button:hover {
   .ico-graph {
     margin-top: $header_height;
     p.ico-graph-text {
-      margin-bottom: $header_height;
+      margin-bottom: $header_height/2;
     }
     .ico-graph-title {
       @extend .color-hi;
@@ -232,17 +233,30 @@ a.button:hover {
       height: 380px;
     }
     .bonus {
+      padding-top: 10px;
       .bonus-sent {
         @extend .color-hi;
         font-size: 1em;
+        padding-right: 50px;
         display: inline-block;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
       }
       .bonus-discount {
         font-size: 1em;
+        padding-left: 35px;
         display: inline-block;
-        margin-bottom: 5px;
-      }  
+        margin-bottom: 0px;
+      }
+      .bonus-separator {
+        @extend .ha;
+        div {
+          display: inline-block;
+          @extend .ha;
+        }
+        .bonus-border {
+          border: 1px solid $clear;
+        }
+      }
     }
   }
 }
