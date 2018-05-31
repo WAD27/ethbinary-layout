@@ -156,9 +156,14 @@ a.button:hover {
   margin-bottom: 16px;
   .team-image {
     height: 180px;
-    @extend .bg-hi;
     margin-bottom: 16px;
-    border-radius: 120px;
+    .team-image-rounded {
+      @extend .bg-hi;
+      border-radius: 100px;
+      height: 180px;
+      width: 180px;
+      @extend .mx-auto;
+    }
   }
   .team-icons {
     height: 30px;

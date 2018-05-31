@@ -5320,7 +5320,8 @@ button.bg-dark:focus {
   margin-top: auto !important; }
 
 .mr-auto,
-.mx-auto {
+.mx-auto,
+.team-member .team-image .team-image-rounded {
   margin-right: auto !important; }
 
 .mb-auto,
@@ -5328,7 +5329,8 @@ button.bg-dark:focus {
   margin-bottom: auto !important; }
 
 .ml-auto,
-.mx-auto {
+.mx-auto,
+.team-member .team-image .team-image-rounded {
   margin-left: auto !important; }
 
 @media (min-width: 576px) {
@@ -9488,7 +9490,7 @@ readers do not read off random characters that represent icons */
 .color-hi, body ul li a:hover, body ul li a.active, header .navbar-toggler, .hero-subtitle span, #faq .faq-question, #ico .ico-text, #ico .ico-graph .ico-graph-title, #ico .ico-graph .bonus .bonus-sent {
   color: #5DFC9F; }
 
-.bg-hi, button, a.button, .team-member .team-image {
+.bg-hi, button, a.button, .team-member .team-image .team-image-rounded {
   background-color: #5DFC9F; }
 
 @font-face {
@@ -9584,8 +9586,11 @@ a.button:hover {
   margin-bottom: 16px; }
   .team-member .team-image {
     height: 180px;
-    margin-bottom: 16px;
-    border-radius: 120px; }
+    margin-bottom: 16px; }
+    .team-member .team-image .team-image-rounded {
+      border-radius: 100px;
+      height: 180px;
+      width: 180px; }
   .team-member .team-icons {
     height: 30px;
     margin-bottom: 16px; }

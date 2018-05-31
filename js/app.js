@@ -36,7 +36,7 @@ function drawChart() {
     title: '',
     backgroundColor:{
       'fill':'transparent',
-      'strokeWidth': 0
+      'strokeWidth': '0px'
     },
     chartArea: {
       height:'80%',
