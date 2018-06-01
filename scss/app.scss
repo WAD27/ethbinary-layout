@@ -266,6 +266,14 @@ a.button:hover {
     }
   }
 }
+#trade {
+  padding-bottom: $header_height;
+  #trade-graph {
+    height: 80vh;
+  }
+
+
+}
 .copyright {
   @extend .color-clear;
   text-align: center;

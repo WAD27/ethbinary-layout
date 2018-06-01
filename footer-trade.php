@@ -11,7 +11,7 @@
     $menu_item_link = array('#about', '#', '#', '#', '#', '#');
     $active = 0;//active class
     ?>
-    <nav class="navbar navbar-expand-lg col-sm-6 col-md-9">
+    <nav class="navbar navbar-expand-lg col-sm-6 col-md-12">
       <!--  -->
       <button class="col-12 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span>
@@ -37,13 +37,13 @@
 
     </nav>
     <!--  -->
-    <div class="logo col-xs-12 col-md-3">
+    <!-- <div class="logo col-xs-12 col-md-3 align-center">
       <div class="imgLiquid imgLiquidNoFill">
         <img src="img/ethbinary-logo-white.png" alt="">
       </div>
-    </div>
+    </div> -->
 
-    <div class="row col-xs-12 col-md-9">
+    <div class="row col-12">
       <h6 class="copyright col-12 align-self-center">
         <?php echo date('Y') . ' | Ethbinary All Rights Reserved'; ?>
       </h6>

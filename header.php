@@ -20,14 +20,16 @@
 		<div class="row">
 
 			<div class="logo col-sm-6 col-md-3">
-				<div class="imgLiquid imgLiquidNoFill">
-					<img src="img/ethbinary-logo.png" alt="">
-				</div>
+				<a href="index.php">
+					<div class="imgLiquid imgLiquidNoFill">
+						<img src="img/ethbinary-logo.png" alt="">
+					</div>
+				</a>
 			</div>
 			<?php
 			// $menu_item = array('Trade', 'FAQ', 'About Us', 'Contract', 'Join our ICO', 'Whitepaper');//original order
 			$menu_item = array('About Us','Trade', 'Contract', 'Join our ICO', 'Whitepaper', 'FAQ');
-			$menu_item_link = array('#about', '#', '#', '#', '#', '#');
+			$menu_item_link = array('#about', 'trade.php', '#', '#ico', '#', '#faq');
 			$active = 0;//active class
 			?>
 			<nav class="navbar navbar-expand-lg col-sm-6 col-md-9">
