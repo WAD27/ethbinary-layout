@@ -9567,6 +9567,9 @@ a.button:hover {
 .ha, #ico .ico-graph .bonus .bonus-separator, #ico .ico-graph .bonus .bonus-separator div {
   height: auto; }
 
+.wa {
+  width: auto; }
+
 .title {
   font-size: 2.5em; }
 

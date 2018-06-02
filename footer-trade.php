@@ -7,9 +7,8 @@
     <!--  -->
     <?php
     // $menu_item = array('Trade', 'FAQ', 'About Us', 'Contract', 'Join our ICO', 'Whitepaper');//original order
-    $menu_item = array('About Us','Trade', 'Contract', 'Join our ICO', 'Whitepaper', 'FAQ');
-    $menu_item_link = array('#about', '#', '#', '#', '#', '#');
-    $active = 0;//active class
+    $menu_item = array('About Us', 'Contract', 'Join our ICO', 'Whitepaper', 'FAQ');
+    $menu_item_link = array('#about', '#', '#', '#', '#');
     ?>
     <nav class="navbar navbar-expand-lg col-sm-6 col-md-12">
       <!--  -->
@@ -19,12 +18,12 @@
       <!--  -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="navbar-nav mr-auto col-12">
-          <?php for ($i=0; $i < 6; $i++):?>
+        <ul class="navbar-nav col-12">
+          <?php for ($i=0; $i < 5; $i++):?>
 
             <li class="col-lg-2 align-self-center">
 
-              <a class="<?php echo ($i === $active ? 'active':null);?>" href="<?php echo $menu_item_link[$i]?>">
+              <a class="color-clear" href="<?php echo $menu_item_link[$i]?>">
                 <?php echo $menu_item[$i]; ?>
               </a>
 

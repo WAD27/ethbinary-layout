@@ -26,8 +26,8 @@
 			</div>
 			<?php
 			// $menu_item = array('Trade', 'FAQ', 'About Us', 'Contract', 'Join our ICO', 'Whitepaper');//original order
-			$menu_item = array('About Us','Trade', 'Contract', 'Join our ICO', 'Whitepaper', 'FAQ');
-			$menu_item_link = array('#about', '#', '#', '#', '#', '#');
+			$menu_item = array('Trade', 'Chat', 'Stats', 'Balance');
+			$menu_item_link = array('trade.php','#', '#', '#');
 			$active = 0;//active class
 			?>
 			<nav class="navbar navbar-expand-lg col-sm-6 col-md-9">
