@@ -75,14 +75,9 @@ header {
   }
   .navbar-nav {
     @extend .bg-base;
-    // @if(.navbar-toggler:hidden == true) {
-    //     &li {
-    //       height: 45px;
-    //   }
-    // }
-    // li {
-    //   height: 40px;
-    // }
+    .nav-item {
+      padding: 0 30px;
+    }
   }
   .navbar-toggler {
     text-align: right;
@@ -101,6 +96,9 @@ footer {
     .logo {
       padding: 16px 0;
       height: $header-height;
+    }
+    .nav-item {
+      padding: 0 30px;
     }
   }
 }

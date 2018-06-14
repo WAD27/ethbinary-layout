@@ -9532,6 +9532,8 @@ header {
   z-index: 2; }
   header .logo {
     padding: 16px 0; }
+  header .navbar-nav .nav-item {
+    padding: 0 30px; }
   header .navbar-toggler {
     text-align: right; }
 
@@ -9542,6 +9544,8 @@ footer {
     footer .row .logo {
       padding: 16px 0;
       height: 70px; }
+    footer .row .nav-item {
+      padding: 0 30px; }
 
 button, a.button {
   border: none;

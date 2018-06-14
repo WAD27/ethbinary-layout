@@ -18,12 +18,12 @@
       <!--  -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="navbar-nav col-12">
-          <?php for ($i=0; $i < 5; $i++):?>
+        <ul class="navbar-nav mx-auto">
+          <?php for ($i=0; $i < count($menu_item); $i++):?>
 
-            <li class="col-lg-2 align-self-center">
+            <li class="nav-item align-self-center">
 
-              <a class="color-clear" href="<?php echo $menu_item_link[$i]?>">
+              <a class="color-clear nav-link" href="<?php echo $menu_item_link[$i]?>">
                 <?php echo $menu_item[$i]; ?>
               </a>
 

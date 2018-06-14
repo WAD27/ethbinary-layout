@@ -26,7 +26,7 @@
 			</div>
 			<?php
 			// $menu_item = array('Trade', 'FAQ', 'About Us', 'Contract', 'Join our ICO', 'Whitepaper');//original order
-			$menu_item = array('Trade', 'Chat', 'Stats', 'Balance');
+			$menu_item = array('Trade', 'Chat', 'Stats', 'Balance: 0.153752065 Eth');
 			$menu_item_link = array('trade.php','#', '#', '#');
 			$active = 0;//active class
 			?>
@@ -38,12 +38,12 @@
 				<!--  -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-					<ul class="navbar-nav mr-auto col-12">
-						<?php for ($i=0; $i < 6; $i++):?>
+					<ul class="navbar-nav ml-auto">
+						<?php for ($i=0; $i < count($menu_item); $i++):?>
 
-							<li class="col-lg-2 align-self-center">
+							<li class="nav-item align-self-center">
 
-								<a class="<?php echo ($i === $active ? 'active':null);?>" href="<?php echo $menu_item_link[$i]?>">
+								<a class="<?php echo ($i === $active ? 'active':null);?> nav-link" href="<?php echo $menu_item_link[$i]?>">
 									<?php echo $menu_item[$i]; ?>
 								</a>
 

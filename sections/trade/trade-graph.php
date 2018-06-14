@@ -3,7 +3,7 @@
 <div class="row col-12">
 
 
-  <?php echo "WEVOOS!!!"; ?>
+  <?php echo "Test"; ?>
 
 
 </div>
